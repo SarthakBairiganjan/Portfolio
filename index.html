@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sarthak Bairiganjan | Business Systems Lead</title>
+<meta name="description" content="Business Systems Lead with 8+ years across finance, planning, supply chain and operations. Enterprise KPIs, ETL validation, dashboards and product management.">
+<meta property="og:title" content="Sarthak Bairiganjan | Business Systems Lead">
+<meta property="og:description" content="I turn enterprise data into reporting people actually use.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf7f2; --surface:#ffffff; --ink:#1b2430; --muted:#5c6773; --line:#e6dfd3;
+  --accent:#b4531a; --accent-soft:#f6e6d9; --teal:#1f6f6b;
+  --radius:14px; --maxw:1080px;
+  --serif:"Fraunces", Georgia, "Times New Roman", serif;
+  --sans:"Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+:root[data-theme="dark"]{
+  --bg:#12171d; --surface:#1a2129; --ink:#eef1f4; --muted:#9aa6b2; --line:#2a333d;
+  --accent:#f0a36a; --accent-soft:#2b2219; --teal:#5cc2bb;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#12171d; --surface:#1a2129; --ink:#eef1f4; --muted:#9aa6b2; --line:#2a333d;
+    --accent:#f0a36a; --accent-soft:#2b2219; --teal:#5cc2bb;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;margin:0}
+section{padding:72px 0}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px}
+h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:28px}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:var(--serif);font-weight:600;font-size:1.1rem;color:var(--ink)}
+.brand span{color:var(--accent)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{color:var(--muted);font-size:.9rem;font-weight:500}
+nav a:hover{color:var(--ink);text-decoration:none}
+.icon-btn{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;width:36px;height:36px;cursor:pointer;font-size:1rem}
+.menu-btn{display:none}
+@media (max-width:860px){
+  .menu-btn{display:inline-block}
+  nav ul{position:absolute;top:60px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);display:none;padding:8px 20px 16px;align-items:flex-start}
+  nav ul.open{display:flex}
+  nav li{padding:8px 0;width:100%}
+}
+
+/* hero */
+.hero{padding:88px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}}
+.hero h1{font-size:clamp(2.4rem,6vw,4rem);margin-bottom:14px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.role{font-size:1.15rem;color:var(--muted);margin-bottom:22px}
+.lead{font-size:1.05rem;max-width:58ch;margin-bottom:28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;font-weight:600;font-size:.92rem;border:1px solid var(--accent)}
+.btn.primary{background:var(--accent);color:#fff}
+:root[data-theme="dark"] .btn.primary{color:#12171d}
+.btn.ghost{color:var(--accent);background:transparent}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.chip{font-size:.78rem;padding:5px 11px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:600}
+.chip.teal{background:color-mix(in srgb,var(--teal) 14%,transparent);color:var(--teal)}
+.stat-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.stat-card h3{font-size:.8rem;font-family:var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:18px;font-weight:600}
+.stat-row{display:flex;justify-content:space-between;align-items:baseline;padding:11px 0;border-top:1px solid var(--line)}
+.stat-row:first-of-type{border-top:0}
+.stat-row b{font-family:var(--serif);font-size:1.7rem;color:var(--accent)}
+.stat-row span{color:var(--muted);font-size:.88rem;text-align:right;max-width:60%}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr}}
+.about p{margin:0 0 14px}
+.facts{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.facts dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:.93rem}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0;font-weight:500}
+
+/* achievements */
+.ach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.ach{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.ach .big{font-family:var(--serif);font-size:2.4rem;color:var(--accent);line-height:1;margin-bottom:10px}
+.ach p{margin:0;color:var(--muted);font-size:.93rem}
+.ach p strong{color:var(--ink)}
+
+/* timeline */
+.timeline{position:relative;padding-left:26px;border-left:2px solid var(--line)}
+.job{position:relative;margin-bottom:36px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.job::before{content:"";position:absolute;left:-35px;top:30px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.job-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;margin-bottom:12px}
+.job h3{font-size:1.25rem}
+.job .where{color:var(--teal);font-weight:600;font-size:.95rem}
+.job .when{color:var(--muted);font-size:.88rem;white-space:nowrap}
+.job .loc{color:var(--muted);font-size:.85rem}
+.job ul{margin:12px 0 0;padding-left:18px}
+.job li{margin-bottom:7px;font-size:.95rem}
+.job li::marker{color:var(--accent)}
+.job li strong{font-weight:600}
+details.job-more summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:.9rem;margin-top:6px}
+
+/* projects */
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:12px}
+.proj.featured{grid-column:1/-1}
+.proj h3{font-size:1.2rem}
+.proj p{margin:0;color:var(--muted);font-size:.94rem}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.links a{font-size:.82rem;font-weight:600;padding:6px 12px;border:1px solid var(--line);border-radius:8px;color:var(--ink)}
+.links a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+
+/* skills */
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.skill{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.skill h3{font-family:var(--sans);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:7px}
+.tags span{font-size:.82rem;padding:5px 10px;border-radius:8px;background:var(--bg);border:1px solid var(--line)}
+
+/* education / certs */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+.edu{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin-bottom:14px}
+.edu h3{font-size:1.05rem;margin-bottom:4px}
+.edu .meta{color:var(--muted);font-size:.88rem}
+.edu .grade{display:inline-block;margin-top:8px;font-weight:600;color:var(--accent);font-size:.9rem}
+.cert-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.cert-list li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:.93rem;display:flex;gap:10px;align-items:flex-start}
+.cert-list li::before{content:"\2713";color:var(--teal);font-weight:700}
+
+/* contact */
+.contact{text-align:center}
+.contact p{max-width:52ch;margin:0 auto 26px;color:var(--muted)}
+.contact .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.85rem;text-align:center}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+@media print{header.nav,.icon-btn{display:none}.reveal{opacity:1;transform:none}section{padding:28px 0}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Sarthak<span>.</span></a>
+    <nav aria-label="Primary">
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="icon-btn" id="theme" aria-label="Toggle light or dark theme" title="Toggle theme">&#9680;</button></li>
+      </ul>
+    </nav>
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Business Systems Lead</div>
+      <h1>I turn enterprise data into <em>reporting people actually use.</em></h1>
+      <p class="role">Sarthak Bairiganjan &middot; Business Systems Analyst, Yakima Valley Farm Workers Clinic</p>
+      <p class="lead">8+ years across finance, planning, supply chain and operations. From defining executive KPIs to validating ETL pipelines in data warehouses and building dashboards in Excel and Tableau, with cleaner data and faster decisions as the goal.</p>
+      <div class="cta">
+        <a class="btn primary" href="#experience">View experience</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+      <div class="badges">
+        <span class="chip">Arizona State University &middot; MS Business Analytics</span>
+        <span class="chip teal">Certified Scrum Product Owner&reg;</span>
+        <span class="chip">Product Management, Duke Corporate Education</span>
+      </div>
+    </div>
+    <aside class="stat-card" aria-label="Highlights">
+      <h3>Impact at a glance</h3>
+      <div class="stat-row"><b>40%</b><span>fewer support tickets for ~200 users</span></div>
+      <div class="stat-row"><b>50%</b><span>faster approval cycle time (Fiori automation)</span></div>
+      <div class="stat-row"><b>50%</b><span>shorter system readiness, 1 month to 2 weeks</span></div>
+      <div class="stat-row"><b>&#8377;3 cr</b><span>enterprise transformation program led</span></div>
+    </aside>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="wrap reveal">
+    <div class="eyebrow">About</div>
+    <h2>Where business, data and systems meet</h2>
+    <div class="about-grid">
+      <div>
+        <p>I'm a Business Systems Lead who works across finance, planning, supply chain and operations. My focus is making enterprise data trustworthy and usable, so leaders can make faster decisions with confidence.</p>
+        <p>I've led cross-functional projects across the US, EMEA and APAC in large, matrixed organizations, partnering with CFOs, VPs, engineering, architecture and QA teams to define requirements, set success metrics and deliver across enterprise systems.</p>
+        <p>I'm now building on that foundation with product management, including a post-graduate certificate from Duke Corporate Education and the Certified Scrum Product Owner credential.</p>
+      </div>
+      <div class="facts">
+        <dl>
+          <dt>Current role</dt><dd>Business Systems Analyst</dd>
+          <dt>Experience</dt><dd>8+ years</dd>
+          <dt>Regions</dt><dd>US &middot; EMEA &middot; APAC</dd>
+          <dt>Education</dt><dd>MS Business Analytics, ASU (9.5/10.0)</dd>
+          <dt>Core tools</dt><dd>SQL, Tableau, Excel, Oracle ERP/EPM, SAP S/4HANA</dd>
+          <dt>Focus</dt><dd>KPIs, ETL validation, dashboards, product</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="impact">
+  <div class="wrap reveal">
+    <div class="eyebrow">Achievements</div>
+    <h2>Outcomes I'm proud of</h2>
+    <div class="ach-grid">
+      <article class="ach"><div class="big">40%</div><p><strong>Reduced support tickets</strong> for ~200 target users through stakeholder interviews, workshops and process analysis.</p></article>
+      <article class="ach"><div class="big">&#8377;3 cr</div><p><strong>Led an enterprise transformation program</strong> across a highly matrixed group of stakeholders, owning requirements, risks, dependencies and delivery milestones.</p></article>
+      <article class="ach"><div class="big">6 LOBs</div><p><strong>Built the board financial report</strong> for the CFO and VP Finance, comparing fiscal actuals to the prior year with dollar and percentage variances across 6 lines of business.</p></article>
+      <article class="ach"><div class="big">50%</div><p><strong>Owned the APAC portfolio at Infosys</strong>; solutions later scaled globally, including Fiori workflow automation that cut approval cycle time by 50%.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap reveal">
+    <div class="eyebrow">Work experience</div>
+    <h2>Career timeline</h2>
+    <div class="timeline">
+
+      <article class="job">
+        <div class="job-head">
+          <div><h3>Business Systems Analyst</h3><div class="where">Yakima Valley Farm Workers Clinic</div><div class="loc">Texas, United States</div></div>
+          <div class="when">July 2023 &ndash; Present</div>
+        </div>
+        <ul>
+          <li>Partnered with the <strong>CFO, VP, engineering, architecture and QA</strong> to define requirements, set success metrics, and deliver across enterprise systems.</li>
+          <li>Developed and standardized <strong>KPI definitions</strong> and business logic across stakeholders for revenue, supply cost, payroll, overtime, department spend and operational performance, improving consistency of enterprise reporting.</li>
+          <li><strong>Validated ETL pipelines from Epic to the data warehouse</strong>, identifying data gaps, inconsistencies and downstream reporting issues, and improving reliability of analytics.</li>
+          <li>Analyzed operational and financial data to identify usage trends, performance gaps, data issues and improvement opportunities, translating findings into actionable recommendations for senior leadership.</li>
+          <li>Presented data insights, risks and solution trade-offs to senior leadership in governance forums.</li>
+          <li>Reduced manual reporting by <strong>20%</strong> through SQL views in the <strong>data warehouse</strong>, <strong>reusable Smart View templates</strong> and <strong>Tableau/OTBI dashboards</strong>, giving leaders self-service access to operational insights.</li>
+          <li>Redesigned budgeting and enterprise data workflows, <strong>reducing system readiness time by 50%</strong> (one month to two weeks) and accelerating budget closure by one month.</li>
+          <li>Defined testing and validation strategies, reviewed test scenarios, coordinated integration testing, and led UAT to verify solutions met business requirements before deployment.</li>
+          <li>Participated in vendor selection for the organization's transition to a new enterprise systems partner and presented recommendations to senior leadership.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div><h3>Business Analyst Intern</h3><div class="where">Arizona Lottery</div><div class="loc">Arizona, United States</div></div>
+          <div class="when">June 2023 &ndash; July 2023</div>
+        </div>
+        <ul>
+          <li>Analyzed retailer sales and winnings data to identify regional trends, performance gaps and <strong>actionable insights for business users</strong>.</li>
+          <li>Owned product requirements and success metrics for a regional analytics product, translating stakeholder needs into data and reporting enhancements.</li>
+          <li>Added <strong>ZIP code-level analytics</strong> to improve geographic visibility for regional managers, increasing actionable insights by <strong>35%</strong>.</li>
+          <li>Validated <strong>ELT pipeline outputs in Databricks</strong> using SQL, reconciling retailer sales against source systems to confirm completeness and accuracy before they fed regional reporting.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div><h3>Business Analyst Intern</h3><div class="where">Cintas Corporation</div><div class="loc">Arizona, United States</div></div>
+          <div class="when">January 2023 &ndash; May 2023</div>
+        </div>
+        <ul>
+          <li>Analyzed <strong>inventory and operational data</strong> across plants and warehouses to identify shortages, usage patterns and supply-chain visibility gaps.</li>
+          <li>Partnered with operations leadership to define requirements, KPIs and success measures for an <strong>inventory analytics solution</strong>.</li>
+          <li>Improved shortage visibility by <strong>10%</strong>, helping teams identify operational issues earlier and make more informed supply-chain decisions.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div><h3>Associate Consultant</h3><div class="where">Infosys</div><div class="loc">Pune, India</div></div>
+          <div class="when">May 2021 &ndash; August 2022</div>
+        </div>
+        <ul>
+          <li>Supported <strong>SAP S/4HANA supply-chain and order-to-cash transformation</strong>, analyzing business processes, system gaps and operational requirements during a complex system rollout.</li>
+          <li>Translated business requirements into scalable SAP solutions across <strong>order management, pricing, billing, compliance and warehouse integration</strong>.</li>
+          <li>Integrated SAP with warehouse systems using <strong>IDoc-based data flows</strong>, reducing reconciliation effort by <strong>25%</strong> and improving process reliability.</li>
+          <li>Built <strong>Fiori workflow automation</strong> that reduced approval cycle time by <strong>50%</strong> and improved adoption of digital processes.</li>
+          <li>Led requirements, solution validation, testing and post-go-live support while coordinating stakeholders across APAC and global teams.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <div class="job-head">
+          <div><h3>Application Development Analyst</h3><div class="where">Accenture</div><div class="loc">Pune, India</div></div>
+          <div class="when">February 2018 &ndash; May 2021</div>
+        </div>
+        <ul>
+          <li>Delivered <strong>SAP supply-chain and ERP analytics solutions</strong> across APAC, analyzing operational workflows, data dependencies, system gaps and business requirements.</li>
+          <li>Led <strong>ERP automation using IDoc-based processing</strong>, reducing manual effort by <strong>40%</strong> and support tickets by <strong>8%</strong>.</li>
+          <li>Designed <strong>SAP SD/MM</strong> process solutions spanning order, pricing, billing, inventory and document flows, improving operational efficiency and data accuracy.</li>
+          <li>Developed reporting dashboards to improve visibility into order, delivery and operational performance metrics.</li>
+          <li>Identified recurring process and system gaps and contributed to roadmap and solution design for SAP platforms.</li>
+          <li>Led UAT, integration testing, deployment and post-go-live validation to ensure solutions met business requirements and delivered expected outcomes.</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap reveal">
+    <div class="eyebrow">Project experience</div>
+    <h2>Product and analytics projects</h2>
+    <div class="proj-grid">
+
+      <article class="proj featured">
+        <span class="chip">Product Management &middot; Business case</span>
+        <h3>Healthband for the IT workforce</h3>
+        <p>Conceptualized a digital health platform for IT wage workers (target users aged 23&ndash;60) to track sleep, recovery and daily health metrics, using machine-learning recommendations and provider oversight to promote healthier lifestyles.</p>
+        <div class="links">
+          <!-- TODO: replace each "#" with your real project link -->
+          <a href="#" target="_blank" rel="noopener">1. Market research &amp; target customer</a>
+          <a href="#" target="_blank" rel="noopener">2. Product design</a>
+          <a href="#" target="_blank" rel="noopener">3. Product roadmap</a>
+          <a href="#" target="_blank" rel="noopener">4. Product metrics</a>
+        </div>
+      </article>
+
+      <article class="proj">
+        <span class="chip">Product Management</span>
+        <h3>Travel booking website design</h3>
+        <p>Product and website design project for a travel booking experience.</p>
+        <div class="links"><a href="#" target="_blank" rel="noopener">Project link</a></div>
+      </article>
+
+      <article class="proj">
+        <span class="chip teal">Built with Claude &middot; Web / Mobile</span>
+        <h3>Escape-crackers (Diwali game)</h3>
+        <p>A Diwali-themed game built using Claude, playable on web and mobile devices.</p>
+        <div class="links"><a href="#" target="_blank" rel="noopener">Play the game</a></div>
+      </article>
+
+      <article class="proj">
+        <span class="chip">Case study</span>
+        <h3>Zoom: SaaS product metrics with AARRR</h3>
+        <p>As a Product Manager, identified the key metrics a SaaS product like Zoom can use, structured with the AARRR (Acquisition, Activation, Retention, Referral, Revenue) framework.</p>
+        <div class="links"><a href="#" target="_blank" rel="noopener">Read the case study</a></div>
+      </article>
+
+      <article class="proj">
+        <span class="chip">Dashboards</span>
+        <h3>Tableau Public</h3>
+        <p>Selected data visualizations and dashboards published on Tableau Public.</p>
+        <div class="links"><a href="#" target="_blank" rel="noopener">Open Tableau Public</a></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap reveal">
+    <div class="eyebrow">Skills &amp; tools</div>
+    <h2>What I bring to a team</h2>
+    <div class="skill-grid">
+      <div class="skill"><h3>Process &amp; quality improvement</h3><div class="tags"><span>Process Improvement</span><span>Quality Assurance</span><span>Continuous Improvement</span><span>Root Cause Analysis</span><span>Gap Analysis</span><span>Process Mapping</span><span>Standardization</span><span>UAT</span><span>Defect Management</span></div></div>
+      <div class="skill"><h3>Data &amp; analytics</h3><div class="tags"><span>SQL</span><span>Data Analysis</span><span>KPI Development</span><span>Operational Reporting</span><span>Dashboarding</span><span>Tableau</span><span>Excel</span><span>Data Validation</span><span>Data Modeling</span></div></div>
+      <div class="skill"><h3>Program management</h3><div class="tags"><span>Program Delivery</span><span>Project Planning</span><span>Cross-functional Collaboration</span><span>Stakeholder Management</span><span>Change Management</span><span>Agile/Scrum</span></div></div>
+      <div class="skill"><h3>Business analysis</h3><div class="tags"><span>Requirements Gathering</span><span>BRD/FRD</span><span>User Stories</span><span>Use Cases</span><span>Process Documentation</span><span>Workshop Facilitation</span><span>Business Requirements</span></div></div>
+      <div class="skill"><h3>Systems &amp; tools</h3><div class="tags"><span>Tableau</span><span>SQL/MySQL</span><span>Jira</span><span>Confluence</span><span>Excel</span><span>Oracle ERP</span><span>Oracle EPM</span><span>SAP S/4HANA</span><span>SAP</span><span>ETL/Data Pipelines</span><span>REST APIs</span><span>IDoc</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION + CERTS -->
+<section id="education">
+  <div class="wrap reveal two">
+    <div>
+      <div class="eyebrow">Education</div>
+      <h2>Learning</h2>
+      <div class="edu">
+        <h3>Master of Science in Business Analytics</h3>
+        <div class="meta">Arizona State University, W. P. Carey School of Business &middot; Arizona, United States<br>August 2022 &ndash; May 2023</div>
+        <div class="meta">Coursework: SQL, Python, Statistics, Machine Learning, Supply Chain Analytics</div>
+        <span class="grade">9.5 / 10.0</span>
+      </div>
+      <div class="edu">
+        <h3>Post-Graduate Certificate in Product Management</h3>
+        <div class="meta">Duke Corporate Education (via upGrad) &middot; October 2025 &ndash; January 2026</div>
+      </div>
+      <div class="edu">
+        <h3>Bachelor of Technology</h3>
+        <div class="meta">Biju Patnaik University of Technology &middot; Odisha, India<br>August 2013 &ndash; May 2017</div>
+        <span class="grade">7.25 / 10</span>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow">Certifications</div>
+      <h2>Credentials</h2>
+      <ul class="cert-list">
+        <li>Certified Scrum Product Owner&reg;</li>
+        <li>Microsoft Certified: Azure AI Fundamentals</li>
+        <li>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</li>
+        <li>Oracle Fusion Cloud Applications ERP Process Essentials Certified &ndash; Rel 1</li>
+        <li>Introducing Joule Studio in SAP Build</li>
+        <li>Exploring SAP Business Technology Platform</li>
+        <li>Microsoft Workshop: AI Agent in a Day</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap reveal">
+    <div class="eyebrow">Contact</div>
+    <h2>Let's talk</h2>
+    <p>Interested in business systems, analytics or product roles? I'd be glad to connect.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:sarthakbairiganjan@gmail.com">sarthakbairiganjan@gmail.com</a>
+      <!-- TODO: replace "#" with your LinkedIn profile URL -->
+      <a class="btn ghost" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <!-- TODO: replace "#" with your Tableau Public profile URL -->
+      <a class="btn ghost" href="#" target="_blank" rel="noopener">Tableau Public</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="yr">2026</span> Sarthak Bairiganjan</div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  try{var saved=localStorage.getItem("theme");if(saved)root.setAttribute("data-theme",saved);}catch(e){}
+  document.getElementById("theme").addEventListener("click",function(){
+    var cur=root.getAttribute("data-theme");
+    if(!cur){cur=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}
+    var next=cur==="dark"?"light":"dark";
+    root.setAttribute("data-theme",next);
+    try{localStorage.setItem("theme",next);}catch(e){}
+  });
+  var menu=document.getElementById("menu"),btn=document.getElementById("menuBtn");
+  btn.addEventListener("click",function(){
+    var open=menu.classList.toggle("open");
+    btn.setAttribute("aria-expanded",open?"true":"false");
+  });
+  menu.addEventListener("click",function(e){if(e.target.tagName==="A"){menu.classList.remove("open");btn.setAttribute("aria-expanded","false");}});
+  document.getElementById("yr").textContent=new Date().getFullYear();
+  var els=document.querySelectorAll(".reveal");
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);}});
+    },{threshold:.08});
+    els.forEach(function(el){io.observe(el);});
+  }else{els.forEach(function(el){el.classList.add("in");});}
+})();
+</script>
+</body>
+</html>
